@@ -89,6 +89,7 @@ public class ContaVirtual {
                     } else {
                         System.out.println("Falha ao depositar. Verifique o valor informado.");
                     }
+                    
                     break;
                 case 4:
                     System.out.println(contaOrigem.toString());
