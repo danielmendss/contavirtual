@@ -92,6 +92,7 @@ public class ContaVirtual {
                     break;
                 case 4:
                     System.out.println(contaOrigem.toString());
+                    
                     break;
                 case 5:
                     System.out.println("Encerrando sessão atual. Agradecemos a preferência");
