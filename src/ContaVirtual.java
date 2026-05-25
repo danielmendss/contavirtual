@@ -80,11 +80,13 @@ public class ContaVirtual {
                         break;
                     }
                     if (valor <= 0) {
+                        
                         System.out.println("Informe um valor positivo para depósito.");
                         break;
                     }
                     boolean depositou = contaOrigem.depositar(valor);
                     if (depositou) {
+                        
                         System.out.printf("Depósito efetuado. Novo saldo: %.2f\n", contaOrigem.getSaldo());
                     } else {
                         System.out.println("Falha ao depositar. Verifique o valor informado.");
