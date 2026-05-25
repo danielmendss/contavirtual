@@ -39,7 +39,6 @@ public class Banco {
         if (origem == null || destino == null) {
             return false;
         }
-        // Tentar sacar da origem
         synchronized (this) {
             boolean sacou = origem.sacar(valor);
             if (!sacou) {
@@ -47,7 +46,6 @@ public class Banco {
             }
             boolean depositou = destino.depositar(valor);
             if (!depositou) {
-                // Se depósito falhar (valor inválido), reestabelece o saldo da origem
                 origem.depositar(valor);
                 return false;
             }
